@@ -16,7 +16,7 @@
 创建仓库后，GitHub 会显示推送代码的命令。在项目目录执行：
 
 ```bash
-cd /Users/kchen/Desktop/newsnow-main
+    cd /Users/kchen/Desktop/newsnow-main
 
 # 添加远程仓库（替换 YOUR_USERNAME 和 REPO_NAME）
 git remote add origin https://github.com/YOUR_USERNAME/REPO_NAME.git
