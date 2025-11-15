@@ -55,8 +55,8 @@ export function Header() {
             黑熊知天下
           </span>
         </Link>
-        <a target="_blank" href="https://github.com/heixiongxiaoxin" className="btn text-sm ml-1 font-mono">
-          {`v${Version}`}
+        <a target="_blank" href="https://github.com/heixiongxiaoxin" className="btn text-xl ml-1" title="GitHub">
+          <span className="i-ph:github-logo-duotone" />
         </a>
       </span>
       <span className="justify-self-center">
