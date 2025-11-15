@@ -1,0 +1,108 @@
+@import url(@unocss/reset/tailwind.css);
+@import url(overlayscrollbars/overlayscrollbars.css);
+
+html,
+body,
+#app {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'Baloo 2';
+  src: url("/Baloo2-Bold.subset.ttf");
+}
+
+
+html.dark {
+  color-scheme: dark;
+}
+
+body {
+  --at-apply: color-base bg-base sprinkle-primary text-base;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  /* 科幻风格背景 */
+  background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 50%, #0f1419 100%);
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    linear-gradient(rgba(6, 182, 212, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(6, 182, 212, 0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(ellipse at top, rgba(6, 182, 212, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  pointer-events: all !important;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+}
+
+/* https://github.com/KingSora/OverlayScrollbars/blob/master/packages/overlayscrollbars/src/styles/themes.scss */
+.dark .os-theme-dark {
+  --os-handle-bg: rgba(6, 182, 212, 0.4);
+  --os-handle-bg-hover: rgba(6, 182, 212, 0.6);
+  --os-handle-bg-active: rgba(6, 182, 212, 0.8);
+}
+
+
+*, a, button {
+  cursor: default;
+  user-select: none;
+}
+
+#dropdown-menu li {
+  --at-apply: hover:bg-neutral-400/10 rounded-md flex items-center p-1 gap-1;
+}
+
+
+.grabbing * {
+  cursor: grabbing;
+}
+
+/* 科幻风格额外效果 */
+#app {
+  position: relative;
+  z-index: 1;
+}
+
+/* 科幻风格的链接效果 */
+a {
+  transition: all 0.3s ease;
+}
+
+.dark a:hover {
+  text-shadow: 0 0 8px rgba(6, 182, 212, 0.5);
+}
+
+/* 科幻风格的按钮效果 */
+.dark button:hover {
+  box-shadow: 0 0 12px rgba(6, 182, 212, 0.3);
+}
