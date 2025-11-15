@@ -65,25 +65,25 @@ export function Menu() {
                     </li>
                   ))}
               {/* <ThemeToggle /> */}
-              <li onClick={() => window.open(Homepage)} className="cursor-pointer [&_*]:cursor-pointer transition-all">
+              <li onClick={() => window.open("https://github.com/heixiongxiaoxin/hexing-news")} className="cursor-pointer [&_*]:cursor-pointer transition-all">
                 <span className="i-ph:github-logo-duotone inline-block" />
                 <span>Star on Github </span>
               </li>
               <li className="flex gap-2 items-center">
                 <a
-                  href="https://github.com/ourongxing/newsnow"
+                  href="https://github.com/heixiongxiaoxin/hexing-news"
                 >
                   <img
                     alt="GitHub stars badge"
-                    src="https://img.shields.io/github/stars/ourongxing/newsnow?logo=github&style=flat&labelColor=%235e3c40&color=%23614447"
+                    src="https://img.shields.io/github/stars/heixiongxiaoxin/hexing-news?logo=github&style=flat&labelColor=%235e3c40&color=%23614447"
                   />
                 </a>
                 <a
-                  href="https://github.com/ourongxing/newsnow/fork"
+                  href="https://github.com/heixiongxiaoxin/hexing-news/fork"
                 >
                   <img
                     alt="GitHub forks badge"
-                    src="https://img.shields.io/github/forks/ourongxing/newsnow?logo=github&style=flat&labelColor=%235e3c40&color=%23614447"
+                    src="https://img.shields.io/github/forks/heixiongxiaoxin/hexing-news?logo=github&style=flat&labelColor=%235e3c40&color=%23614447"
                   />
                 </a>
               </li>
